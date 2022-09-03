@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navbar Section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 50px;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar header img{
+    height: 20px;
+    width: 110px;
+}
+.navbar ul button{
+    border-radius: 20px;
+    padding: 8px 35px;
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: 0px 1px 10px black;
+    cursor: pointer;
+}
+/* Banner section */
+.banner-section{
+    height: 500px;
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: 25px;
+    padding-bottom: 40px;
+}
+.banner-section .banner-text{
+    padding: 0px 5%;
+    margin-left: 100px;
+}
+.banner-section .banner-text h1{
+    font-size: 40px;
+    margin-top: 50px;
+}
+.banner-section .banner-text p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.banner-section .banner-text button{
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 35px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    box-shadow: 0px 1px 5px black;
+}
+.banner-section .banner-img img{
+    height: 400px;
+    width: 600px;
+    margin-right: 100px;
+}
+
+/* Grow Section */
+.grow-section,
+.user-section{
+    display: flex;
+    width: 90%;
+    box-shadow: 0px 1px 5px black;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+.user-section{
+    margin-top: 50px;
+}
+.grow-image img,
+.user-image img{
+    height: 300px;
+    width: 400px;
+}
+.grow-image,
+.user-image{
+    padding: 20px 0px;
+    margin-right: 5%;
+}
+.grow-text,
+.user-text{
+    padding: 0px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.grow-text p,
+.user-text p{
+    margin-top: 10px;
+}
+/* Flow section */
+.flow-section{
+    display: flex;
+    width: 90%;
+    box-shadow: 0px 1px 5px black;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.flow-image{
+    margin-left: 7%;
+}
+.flow-image img{
+    height: 300px;
+    width: 400px;
+}
+.flow-text{
+    padding-left: 14%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* footer style */
+.build-box{
+    width: 33%;
+    box-shadow: 0px 1px 5px black;
+    height: auto;
+    padding: 50px 20px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background-color: whitesmoke;
+}
+.build-box button{
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 35px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    box-shadow: 0px 1px 5px black;
+}
+.foot-section{
+    background-color: #00252e;
+    color: white;
+    display: flex;
+    padding-top: 100px;
+    height: auto;
+    padding-left: 5%;
+    margin-top: -80px;
+    padding-bottom: 70px;
+}
+.foot-1{
+    flex-basis: 25%;
+    /* background-color: red; */
+}
+#foot-logo{
+    height: 20px;
+    width: 110px;
+}
+.foot-1 ul li,
+.foot-2 ul li,
+.foot-3 ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+.foot-2, .foot-3{
+    flex-basis: 20%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot-list-2 li a,
+.foot-list-3 li a{
+    color: white;
+    text-decoration: none;
+}
+.foot-3{
+    flex-basis: 20%;
+    /* background-color: green; */
+}
+.foot-4{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.foot-4 svg{
+    margin-right: 20px;
+}
+
+/* Desktops */
+@media only screen and (max-width:1200px){
+    .banner-section .banner-text{
+        padding: 0px 3%;
+        margin-left: 70px;
+    }
+    .banner-section{
+        height: 400px;
+        padding-bottom: 30px;
+    }
+    .banner-section .banner-text h1{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .banner-section .banner-img img{
+        height: 350px;
+        width: 550px;
+        margin-right: 50px;
+    }
+    .flow-text{
+        padding-left: 3%;
+    }
+    .build-box h2{
+        font-size: 20px;
+    }
+}
+/* Laptops */
+@media only screen and (max-width:992px){
+    .banner-section .banner-text{
+        /* background-color: green; */
+        padding: 0px 10px;
+    }
+    .banner-section{
+        height: 350px;
+        padding-bottom: 20px;
+    }
+    .banner-section .banner-img img{
+        height: 300px;
+        width: 400px;
+        margin-right: 50px;
+    }
+    .banner-section .banner-text h1{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .banner-section .banner-text p{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .banner-section .banner-text button{
+        padding: 8px 20px;
+        margin-top: 15px;
+    }
+    .grow-text,
+    .user-text{
+        padding: 0px 6%;
+    }
+    .grow-image img,
+    .flow-image img,
+    .user-image img{
+        height: 250px;
+        width: 300px;
+    }
+    .flow-text{
+        padding-left: 13%;
+    }
+    .build-box h2{
+        font-size: 18px;
+    }
+}
+/* ipad and tablet */
+@media only screen and (max-width:768px){
+    .banner-section .banner-text{
+        padding: 10px 60px;
+        margin-left: 0px;
+    }
+    .banner-section .banner-text button{
+        margin-top: 20px;
+    }
+    .banner-section{
+        display: block;
+        text-align: center;
+    }
+    .banner-section .banner-img img{
+        height: 300px;
+        width: 400px;
+        margin-right: 0px;
+    }
+    .grow-section{
+        display: block;
+        margin-top: 200px;
+        text-align: center;
+    }
+    .grow-image,
+    .user-image{
+        margin-right: 0%;
+        margin-top: 20px;
+    }
+    .grow-text,
+    .user-text{
+        padding: 0px 20%;
+    }
+    .grow-text p,
+    .flow-text p,
+    .user-text p{
+        line-height: 25px;
+    }
+    .flow-section{
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .flow-text{
+        padding: 0px 23%;
+        margin-top: 30px;
+    }
+    .user-section{
+        display: block;
+        text-align: center;
+    }
+    .foot-section{
+        display: block;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .build-box{
+        width: 80%;
+    }
+    .foot-2,.foot-3{
+       display: block;
+    }
+
+}
+/* custom screen */
+@media only screen and (max-width: 576px){
+    .banner-section .banner-img img{
+        height: 300px;
+        width: 380px;
+    }
+    .grow-section{
+        margin-top: 220px;
+    }
+    .foot-4{
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+/* Mobile Device */
+@media only screen and (max-width:480px){
+    .banner-section .banner-img img{
+        height: 300px;
+        width: 350px;
+        margin-top: 20px;
+    }
+    .navbar ul button, .banner-section .banner-text button{
+        padding: 5px 8px;
+    }
+    .grow-section{
+        margin-top: 250px;
+    }
+    .grow-text,
+    .user-text{
+        padding: 0px 0px;
+    }
+    .flow-text{
+        padding: 0px 0px;
+        margin-top: 50px;
+    }
+    .foot-4{
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
